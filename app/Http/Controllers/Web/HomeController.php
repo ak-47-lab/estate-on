@@ -28,7 +28,7 @@ class HomeController extends Controller
         // echo "<pre>"; print_r($data['section']->toArray());
         // exit;
         $data['testimonials'] = Testimonials::get();
-        
+        // dd($data['hot_featured']['hot'][0]);
         return view('estate.home', compact('data'));
     }
 
